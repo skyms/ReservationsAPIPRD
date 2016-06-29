@@ -1,8 +1,8 @@
 # Reservations API PRD V1.0
 
-## Objectives
+### Objectives
 
-## Scope
+### Scope
 
 ## Users
 
