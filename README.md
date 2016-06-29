@@ -1,18 +1,18 @@
 # Reservations API PRD V1.0
 
-# Objectives
+## Objectives
 
-# Scope
+## Scope
 
-# Users
+## Users
 
-# Life Cycle of a Reservation
+## Life Cycle of a Reservation
 
-# API Design
-## Object 
-## Make a reservation/Schedule a ride
-## List all reservations
-## Display details of a reservation
-## Cancel a reservation
+## API Design
+### Object 
+### Make a reservation/Schedule a ride
+### List all reservations
+### Display details of a reservation
+### Cancel a reservation
 
 
