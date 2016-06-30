@@ -73,10 +73,8 @@ GET /reservations/{reservation_id}
 ```
 DELETE /reservations/{reservation_id}
 ```
-#### [Update a reservation](/APIDesign/cancel)
-```
-Patch /reservations/{reservation_id}
-```
+
 ### Metrics
 
 ### Go To Market
+
