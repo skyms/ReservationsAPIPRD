@@ -54,7 +54,25 @@ APIs will enable the same scenario as UI within the Uber app. The major use case
 |Event Organizer| Enterprise | |Details|
 
 ### API Design
-#### [Endpoints](../APIDesign/endpoints) 
+#### [Endpoints](/APIDesign/endpoints) 
+#### [Reserve a ride](/APIDesign/schedule)
+```
+POST /reservations
+```
+#### [List all reservations](/APIDesign/list)
+```
+GET /reservations
+```
+
+#### [Show details of a reservation](/APIDesign/details)
+```
+GET /reservations/{reservation_id}
+```
+
+#### [Cancel a reservation](/APIDesign/cancel)
+```
+DELETE /reservations/{reservation_id}
+```
 
 ### Metrics
 
