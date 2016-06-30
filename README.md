@@ -39,6 +39,7 @@ APIs will enable the same scenario as UI within the Uber app. The major use case
 - Better exception handling.
 - Trip branding.
 - Webhook on status changed.
+- smart suggest pick up time based on desstination.
 
 ### Users
 
