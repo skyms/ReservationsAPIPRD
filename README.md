@@ -75,13 +75,33 @@ DELETE /reservations/{reservation_id}
 ```
 
 ### Metrics
+User auisition
+increase footprint
+increase stickness
+revenue
+new line of business
+
+- Developers/app registered,number of partners, active developers, trending apps top developers
+- dev portal funnel
+- API call volumes
+- API-generated revenue
+- API-generated new users
+- API-generated rides
+
+Service uptime
+API performance
+calls per method
+errors
+percentage of error
+
+qualitive feedbacks, surverys, testing, forums, socal media
 
 ### Go To Market
 - Identify goals, resource and key roles.Position our API to deliver unique appealing values to developers.
 - Identify influcing key players in each industry.
 - Internal hackthons and bug bash and make sure service is reliable in real world scenario.
 - Build pilot programs and customer evidence
-- Documentation & localization
+- Documentation & localization, dev portal
 - Train Sales and Support, DX evenaglists.
 - Implementing marketing programs
 - Building community.
