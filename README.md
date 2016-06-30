@@ -40,6 +40,7 @@ APIs will enable the same scenario as UI within the Uber app. The major use case
 - Trip branding.
 - Webhook on status changed.
 - smart suggest pick up time based on desstination.
+- a widget for developers to easily adopt this feature.
 
 ### Users
 
@@ -97,6 +98,7 @@ percentage of error
 qualitive feedbacks, surverys, testing, forums, socal media
 
 ### Go To Market
+- start early and get developers excited about it.
 - Identify goals, resource and key roles.Position our API to deliver unique appealing values to developers.
 - Identify influcing key players in each industry.
 - Internal hackthons and bug bash and make sure service is reliable in real world scenario.
@@ -104,7 +106,7 @@ qualitive feedbacks, surverys, testing, forums, socal media
 - Documentation & localization, dev portal
 - Train Sales and Support, DX evenaglists.
 - Implementing marketing programs
-- Building community.
+- Building community and respond to communities.
 - Collect feedback
 
 
