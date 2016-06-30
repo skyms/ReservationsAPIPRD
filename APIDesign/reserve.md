@@ -1,18 +1,18 @@
 Schedule a ride
 
-### **Reservations/Scheduled Rides Request - Create**
+### Reservations/Scheduled Rides Request - Create
 
 The _Request_ endpoint allows a ride to be scheduled on behalf of an Uber user.
 
-### **Resource**
+### Resource
 
 POST /v1/reservations
 
-### **Authorization**
+### Authorization
 
 OAuth 2.0 bearer token with the request scope.
 
-### **POST Parameters**
+### POST Parameters
 
 | Name | Type | Description |
 | --- | --- | --- |
@@ -29,10 +29,10 @@ OAuth 2.0 bearer token with the request scope.
 | end\_address (_optional_) | string | The final or destination address. |
 | end\_place\_id (_optional_) | string | The final or destination place ID. This is the name of an Uber saved place. Only &quot;home&quot; or &quot;work&quot; is acceptable. Either this or end\_latitude andend\_longitude may be specified. |
 | payment\_method\_id(_optional_) | string | The unique identifier of the payment method selected by a user. If set, the trip will be requested using this payment method. If not set, the trip will be requested using the user&#39;s last used payment method. |
-| expense\_code (_optional_) | string | An alphanumeric identifier for expense reporting policies. This value will appear in the trip receipt and any configured expense-reporting integrations like  [**Uber For Business**](https://www.uber.com/business) or  [**Business Profiles**](https://www.uber.com/business/profiles). |
-| expense\_memo (_optional_) | string | A free text field to describe the purpose of the trip for expense reporting. This value will appear in the trip receipt and any configured expense-reporting integrations like  [**Uber For Business**](https://www.uber.com/business) or [**Business Profiles**](https://www.uber.com/business/profiles). |
+| expense\_code (_optional_) | string | An alphanumeric identifier for expense reporting policies. This value will appear in the trip receipt and any configured expense-reporting integrations like  [Uber For Business](https://www.uber.com/business) or  [Business Profiles](https://www.uber.com/business/profiles). |
+| expense\_memo (_optional_) | string | A free text field to describe the purpose of the trip for expense reporting. This value will appear in the trip receipt and any configured expense-reporting integrations like  [Uber For Business](https://www.uber.com/business) or [Business Profiles](https://www.uber.com/business/profiles). |
 
-### **Example**
+### Example
 
 When specifying pickup and dropoff locations, you can either use latitude/longitude pairs or a place ID. A place ID is just the name of an Uber saved place. Currently only &quot;home&quot; or &quot;work&quot; is acceptable.
 
@@ -66,7 +66,7 @@ or
 
 }
 
-### **Response**
+### Response
 
 Status-Code: 202 OK
 
@@ -103,7 +103,7 @@ Status-Code: 202 OK
 | end.latitude | float | The latitude of the destination. |
 | end.longitude | float | The longitude of the destination. |
 
-### **Error Responses**
+### Error Responses
 
 Status-Code: 409 Conflict
 
@@ -125,21 +125,21 @@ Status-Code: 409 Conflict
 
 Possible Errors
 
-### **Possible Errors**
+### Possible Errors
 
 | Error | Code | Description |
 | --- | --- | --- |
-| 400 | unconfirmed\_email | The user hasn&#39;t confirmed their email address. Instruct the user to confirm their email address within the native mobile application or by visiting [**https://riders.uber.com**](https://riders.uber.com/). |
+| 400 | unconfirmed\_email | The user hasn&#39;t confirmed their email address. Instruct the user to confirm their email address within the native mobile application or by visiting [https://riders.uber.com](https://riders.uber.com/). |
 | 400 | invalid\_payment | The rider&#39;s payment method is invalid. The user must update the billing info. |
-| 403 | forbidden | This user is forbidden from making a request at this time and should consult our support team by visiting  [**https://help.uber.com**](https://help.uber.com/) or by emailing [**support@uber.com**](mailto:support@uber.com). |
-| 403 | unverified | The user hasn&#39;t confirmed their mobile number. Instruct the user to confirm their mobile phone number within the native mobile application or by visiting [**https://riders.uber.com**](https://riders.uber.com/). |
+| 403 | forbidden | This user is forbidden from making a request at this time and should consult our support team by visiting  [https://help.uber.com](https://help.uber.com/) or by emailing [support@uber.com](mailto:support@uber.com). |
+| 403 | unverified | The user hasn&#39;t confirmed their mobile number. Instruct the user to confirm their mobile phone number within the native mobile application or by visiting [https://riders.uber.com](https://riders.uber.com/). |
 | 403 | product\_not\_allowed | The product being requested is not available to the user. Have them select a different product to successfully make a request. |
-| 403 | pay\_balance | The rider has an outstanding balance and must update her account settings by using the native mobile application or by visiting  [**https://riders.uber.com**](https://riders.uber.com/). |
+| 403 | pay\_balance | The rider has an outstanding balance and must update her account settings by using the native mobile application or by visiting  [https://riders.uber.com](https://riders.uber.com/). |
 | 403 | user\_not\_allowed | User is banned and is not permitted to request a ride. |
 | 403 | too\_many\_cancelations | The rider is temporarily blocked due to cancelling too many times. |
 | 403 | missing\_national\_id | Certain jurisdictions require Uber users to register their national ID number or passport number before taking a ride. If a user receives this error when booking a trip through the Developer API, they must enter their national ID number or passport number through the Uber iOS or Android app. |
 | 404 | not\_found | An invalid product ID was requested. Retry the API call with a valid product ID. |
-| 409 | missing\_payment\_method | The rider must have at least one payment method on file to request a car. The rider must add a payment method by using the native mobile application or by visiting  [**https://riders.uber.com**](https://riders.uber.com/). |
+| 409 | missing\_payment\_method | The rider must have at least one payment method on file to request a car. The rider must add a payment method by using the native mobile application or by visiting  [https://riders.uber.com](https://riders.uber.com/). |
 | 409 | surge | Surge pricing is currently in effect for this product. Please have the user confirm surge pricing by sending them to the surge\_confirmation\_href described in the Request Tutorial. |
 | 409 | retry\_request | An error has occurred when the attempting to request a product. Please reattempt the request on behalf of the user. |
 | 409 | trip\_exists | The trip has already been scheduled. |
