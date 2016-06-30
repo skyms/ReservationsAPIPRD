@@ -1,25 +1,27 @@
+List all reservations
 
-### Displaying Details of a Reservations
+### GET /v1.2/reservations
 
-Get the status of an ongoing or completed trip that was created using the _Reservations_ endpoint.
+### User Activity (v1.2)
+
+The _User Activity_ endpoint returns a limited amount of data about a user&#39;s lifetime activity with Uber. The response will include pickup and dropoff times, the city the trips took place in, the distance of past requests, and information about which products were requested.
+
+The history array in the response will have a maximum length based on the limit parameter. The response value countmay exceed limit, therefore subsequent API requests may be necessary.
 
 ### Resource
 
-GET /v1/reservation/{reservation\_id}
+GET /v1.2/reservations
 
 ### Authorization
 
-OAuth 2.0 bearer token with the request scope.
-
-### Path Parameters
-
-| Name | Type | Description |
-| --- | --- | --- |
-| reservation\_id | string | Unique identifier representing a Reservation. |
+OAuth 2.0 bearer token with the history or reservations\_lite scope.
 
 ### Query Parameters
 
-None
+| Name | Type | Description |
+| --- | --- | --- |
+| offset (_optional_) | integer | Offset the list of returned results by this amount. Default is zero. |
+| limit (_optional_) | integer | Number of items to retrieve. Default is 5, maximum is 50. |
 
 ### Response
 
@@ -27,15 +29,23 @@ Status-Code: 200 OK
 
 {
 
-   &quot;reservation\_id&quot;:&quot;17cb78a7-b672-4d34-a288-a6c6e44d5315&quot;,
+  &quot;offset&quot;: 0,
 
-   &quot;pickup\_time&quot;: 1429294463,
+  &quot;limit&quot;: 1,
 
-   &quot;reservation\_status&quot;:&quot;scheduled&quot;,
+  &quot;count&quot;: 5,
 
-   &quot;request\_time&quot;: 1429294463,
+  &quot;reservation&quot;: [
+
+    {
+
+   &quot;reservation\_id&quot;: &quot;852b8fdd-4369-4659-9628-e122662ad257&quot;,
 
    &quot;product\_id&quot;: &quot;a1111c8c-c720-46c3-8534-2fcdd730040d&quot;,
+
+   &quot;status&quot;: &quot;scheduled&quot;,
+
+   &quot;pickup\_time&quot;: 1429294463,
 
    &quot;start\_latitude&quot;: 37.761492,
 
@@ -45,25 +55,34 @@ Status-Code: 200 OK
 
    &quot;end\_longitude&quot;: -122.417546,
 
+   &quot;request\_time&quot;: 1429234463
+
+  },
+
+  ]
+
 }
 
 | Name | Type | Description |
 | --- | --- | --- |
-| reservation\_id | string | The unique ID of the Reservation. |
-| product\_id | string | Unique identifier representing a specific product for a given latitude &amp; longitude. For example, uberX in San Francisco will have a different product\_id than uberX in Los Angeles. |
-| status | string | The status of the Request indicating state. |
-| pickup\_time | integer | Unix UTC timestamp of when the user will be picked up. Note the pickup time is 15 minutes window start from the pickup\_time specified here. |
-| product\_id (_optional_) | string | The unique ID of the product being requested. If none is provided, it will default to the cheapest product for the given location. |
-| start\_latitude(_optional_) | float | The beginning or &quot;pickup&quot; latitude. Either this or start\_place\_id must be specified. |
-| start\_longitude(_optional_) | float | The beginning or &quot;pickup&quot; longitude. Either this or start\_place\_id must be specified. |
-| start\_nickname(_optional_) | string | The beginning or &quot;pickup&quot; nickname label. |
-| start\_address(_optional_) | string | The beginning or &quot;pickup&quot; address. |
-| start\_place\_id(_optional_) | string | The beginning or &quot;pickup&quot; place ID. This is the name of an Uber saved place. Only &quot;home&quot; or &quot;work&quot; is acceptable. Either this or start\_latitude and start\_longitude must be specified. |
-| end\_latitude (_optional_) | float | The final or destination latitude. Either this orend\_place\_id may be specified. |
-| end\_longitude(_optional_) | float | The final or destination longitude. Either this orend\_place\_id may be specified. |
-| end\_nickname (_optional_) | string | The final or destination nickname label. |
-| end\_address (_optional_) | string | The final or destination address. |
-| end\_place\_id (_optional_) | string | The final or destination place ID. This is the name of an Uber saved place. Only &quot;home&quot; or &quot;work&quot; is acceptable. Either this or end\_latitude andend\_longitude may be specified. |
-| payment\_method\_id(_optional_) | string | The unique identifier of the payment method selected by a user. If set, the trip will be requested using this payment method. If not set, the trip will be requested using the user&#39;s last used payment method. |
-| expense\_code (_optional_) | string | An alphanumeric identifier for expense reporting policies. This value will appear in the trip receipt and any configured expense-reporting integrations like  [Uber For Business](https://www.uber.com/business) or  [Business Profiles](https://www.uber.com/business/profiles). |
-| expense\_memo (_optional_) | string | A free text field to describe the purpose of the trip for expense reporting. This value will appear in the trip receipt and any configured expense-reporting integrations like  [Uber For Business](https://www.uber.com/business) or [Business Profiles](https://www.uber.com/business/profiles). |
+| offset | integer | Position in pagination. |
+| limit | integer | Number of items to retrieve (50 max). |
+| count | integer | Total number of items available. |
+| reservation[].reservation\_id | string | The unique ID of the Reservation. |
+| reservation[].product\_id | string | Unique identifier representing a specific product for a given latitude &amp; longitude. For example, uberX in San Francisco will have a different product\_id than uberX in Los Angeles. |
+| reservation[].status | string | The status of the Request indicating state. |
+| reservation[].pickup\_time | integer | Unix UTC timestamp of when the user will be picked up. Note the pickup time is 15 minutes window start from the pickup\_time specified here. |
+| reservation[].product\_id (_optional_) | string | The unique ID of the product being requested. If none is provided, it will default to the cheapest product for the given location. |
+| reservation[].start\_latitude(_optional_) | float | The beginning or &quot;pickup&quot; latitude. Either this or start\_place\_id must be specified. |
+| reservation[].start\_longitude(_optional_) | float | The beginning or &quot;pickup&quot; longitude. Either this or start\_place\_id must be specified. |
+| reservation[].start\_nickname(_optional_) | string | The beginning or &quot;pickup&quot; nickname label. |
+| reservation[].start\_address(_optional_) | string | The beginning or &quot;pickup&quot; address. |
+| reservation[].start\_place\_id(_optional_) | string | The beginning or &quot;pickup&quot; place ID. This is the name of an Uber saved place. Only &quot;home&quot; or &quot;work&quot; is acceptable. Either this or start\_latitude and start\_longitude must be specified. |
+| reservation[].end\_latitude (_optional_) | float | The final or destination latitude. Either this orend\_place\_id may be specified. |
+| reservation[].end\_longitude(_optional_) | float | The final or destination longitude. Either this orend\_place\_id may be specified. |
+| reservation[].end\_nickname (_optional_) | string | The final or destination nickname label. |
+| reservation[].end\_address (_optional_) | string | The final or destination address. |
+| reservation[].end\_place\_id (_optional_) | string | The final or destination place ID. This is the name of an Uber saved place. Only &quot;home&quot; or &quot;work&quot; is acceptable. Either this or end\_latitude andend\_longitude may be specified. |
+| reservation[].payment\_method\_id(_optional_) | string | The unique identifier of the payment method selected by a user. If set, the trip will be requested using this payment method. If not set, the trip will be requested using the user&#39;s last used payment method. |
+| reservation[].expense\_code (_optional_) | string | An alphanumeric identifier for expense reporting policies. This value will appear in the trip receipt and any configured expense-reporting integrations like  [Uber For Business](https://www.uber.com/business) or  [Business Profiles](https://www.uber.com/business/profiles). |
+| reservation[].expense\_memo (_optional_) | string | A free text field to describe the purpose of the trip for expense reporting. This value will appear in the trip receipt and any configured expense-reporting integrations like  [Uber For Business](https://www.uber.com/business) or [Business Profiles](https://www.uber.com/business/profiles). |
