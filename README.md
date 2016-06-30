@@ -77,4 +77,22 @@ DELETE /reservations/{reservation_id}
 ### Metrics
 
 ### Go To Market
+- Identify goals, resource and key roles.Position our API to deliver unique appealing values to developers.
+- Identify influcing key players in each industry.
+- Internal hackthons and bug bash and make sure service is reliable in real world scenario.
+- Build pilot programs and customer evidence
+- Documentation & localization
+- Train Sales and Support, DX evenaglists.
+- Implementing marketing programs
+- Building community.
+- Collect feedback
 
+
+Marketing programs
+-Pilot
+- DX
+- conf
+- Hackerthon
+- Pilot Partner
+- Developer program
+- 
