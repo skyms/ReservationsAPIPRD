@@ -1,5 +1,10 @@
 ## Reservations
-
+| Name | Type | Description |
+| --- | --- | --- |
+| offset | string | The unique ID of the Reservation. |
+| limit | string | Unique identifier representing a specific product for a given latitude &amp; longitude. For example, uberX in San Francisco will have a different product\_id than uberX in Los Angeles. |
+| count | string | The status of the Request indicating state. |
+| reservations |Reservation[]| An array of existing reservations.|
 
 
 
@@ -11,6 +16,7 @@
 | product\_id | string | Unique identifier representing a specific product for a given latitude &amp; longitude. For example, uberX in San Francisco will have a different product\_id than uberX in Los Angeles. |
 | reservation\_status | string | The status of the Request indicating state. |
 | pickup\_time | integer | Unix UTC timestamp of when the user will be picked up. Note the pickup time is 15 minutes window start from the pickup\_time specified here. |
+| request\_time | integer | Unix UTC timestamp of when the reservation is made. |
 | product\_id (_optional_) | string | The unique ID of the product being requested. If none is provided, it will default to the cheapest product for the given location. |
 | start\_latitude(_optional_) | float | The beginning or &quot;pickup&quot; latitude. Either this or start\_place\_id must be specified. |
 | start\_longitude(_optional_) | float | The beginning or &quot;pickup&quot; longitude. Either this or start\_place\_id must be specified. |
