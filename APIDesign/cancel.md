@@ -5,8 +5,9 @@
 Cancel a reservation on behalf of a rider.
 
 ### Resource
-
+```
 DELETE /v1/requests/{reservation\_id}
+```
 
 ### Authorization
 
