@@ -89,6 +89,8 @@ DELETE /reservations/{reservation_id}
 
 
 Marketing programs
+- social, newsletter, blog, social media
+- co-marketing
 -Pilot
 - DX
 - conf
