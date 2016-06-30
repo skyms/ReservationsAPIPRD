@@ -5,8 +5,9 @@ Schedule a ride
 The _Request_ endpoint allows a ride to be scheduled on behalf of an Uber user.
 
 ### Resource
-
+```
 POST /v1/reservations
+```
 
 ### Authorization
 
@@ -36,61 +37,46 @@ OAuth 2.0 bearer token with the request scope.
 
 When specifying pickup and dropoff locations, you can either use latitude/longitude pairs or a place ID. A place ID is just the name of an Uber saved place. Currently only &quot;home&quot; or &quot;work&quot; is acceptable.
 
+```json
 {
-
-        &quot;pickup\_time&quot;: 1429294463,
-
-        &quot;product\_id&quot;: &quot;a1111c8c-c720-46c3-8534-2fcdd730040d&quot;,
-
-        &quot;start\_latitude&quot;: 37.761492,
-
-        &quot;start\_longitude&quot;: -122.423941,
-
-        &quot;end\_latitude&quot;: 37.775393,
-
-        &quot;end\_longitude&quot;: -122.417546
+	"pickup_time": 1429294463,
+	"product_id": "a1111c8c-c720-46c3-8534-2fcdd730040d",
+	"start_latitude": 37.761492,
+	"start_longitude": -122.423941,
+	"end_latitude": 37.775393,
+	"end_longitude": -122.417546
 
 }
+
+```
 
 or
-
+```json
 {
-
-        &quot;pickup\_time&quot;: 1429294463,
-
-        &quot;product\_id&quot;: &quot;a1111c8c-c720-46c3-8534-2fcdd730040d&quot;,
-
-        &quot;start\_place\_id&quot;: &quot;home&quot;,
-
-        &quot;end\_place\_id&quot;: &quot;work&quot;
-
+	"pickup_time": 1429294463,
+	"product_id": "a1111c8c-c720-46c3-8534-2fcdd730040d",
+	"start_place_id": "home",
+	"end_place_id": "work"
 }
+```
 
 ### Response
 
 Status-Code: 202 OK
-
+```json
 {
-
-   &quot;reservation\_id&quot;: &quot;852b8fdd-4369-4659-9628-e122662ad257&quot;,
-
-   &quot;product\_id&quot;: &quot;a1111c8c-c720-46c3-8534-2fcdd730040d&quot;,
-
-   &quot;status&quot;: &quot;scheduled&quot;,
-
-   &quot;pickup\_time&quot;: 1429294463,
-
-   &quot;start\_latitude&quot;: 37.761492,
-
-   &quot;start\_longitude&quot;: -122.423941,
-
-   &quot;end\_latitude&quot;: 37.775393,
-
-   &quot;end\_longitude&quot;: -122.417546,
-
-   &quot;request\_time&quot;: 1429234463
-
+   "reservation_id": "852b8fdd-4369-4659-9628-e122662ad257",
+   "product_id": "a1111c8c-c720-46c3-8534-2fcdd730040d",
+   "status": "scheduled",
+   "pickup_time": 1429294463,
+   "start_latitude": 37.761492,
+   "start_longitude": -122.423941,
+   "end_latitude": 37.775393,
+   "end_longitude": -122.417546,
+   "request_time": 1429234463
 }
+
+```
 
 | Name | Type | Description |
 | --- | --- | --- |
@@ -106,22 +92,18 @@ Status-Code: 202 OK
 ### Error Responses
 
 Status-Code: 409 Conflict
-
+```
 {
-
-   &quot;error&quot;:
-
+   "error":
       {
-
-         &quot;status&quot;: 400,
-
-         &quot;code&quot;: &quot;invalid\_payment&quot;,
-
-         &quot;title&quot;: &quot;The rider&#39;s payment method is invalid. The user must update the billing info.&quot;
-
+         "status": 400,
+         "code": "invalid_payment",
+         "title": "The rider's payment method is invalid. The user must update the billing info."
       }
-
+   
 }
+
+```
 
 Possible Errors
 
