@@ -70,17 +70,12 @@ Status-Code: 200 OK
 | expense\_code (_optional_) | string | An alphanumeric identifier for expense reporting policies. This value will appear in the trip receipt and any configured expense-reporting integrations like  [Uber For Business](https://www.uber.com/business) or  [Business Profiles](https://www.uber.com/business/profiles). |
 | expense\_memo (_optional_) | string | A free text field to describe the purpose of the trip for expense reporting. This value will appear in the trip receipt and any configured expense-reporting integrations like  [Uber For Business](https://www.uber.com/business) or [Business Profiles](https://www.uber.com/business/profiles). |
 
-### Request Statuses
+### Reservation Statuses
 
 All possible statues of a Request&#39;s life cycle.
 
 | Status | Description |
 | --- | --- |
-| processing | The Request is matching to the most efficient available driver. |
-| no\_drivers\_available | The Request was unfulfilled because no drivers were available. |
-| accepted | The Request has been accepted by a driver and is &quot;en route&quot; to the start location (i.e.start\_latitude and start\_longitude). |
-| arriving | The driver has arrived or will be shortly. |
-| in\_progress | The Request is &quot;en route&quot; from the start location to the end location. |
-| driver\_canceled | The Request has been canceled by the driver. |
-| rider\_canceled | The Request canceled by rider. |
-| completed | Request has been completed by the driver. |
+| scheduled | The reservation is already booked. The request will be sent at the user specified pick up time. |
+| cancelled | The reservation has been cancelled. |
+| requested | The reservation has been requested. This is the last stage of reservation. The reservation will become a request at the specified time.|
