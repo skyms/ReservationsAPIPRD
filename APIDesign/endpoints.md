@@ -1,4 +1,6 @@
 ## Reservations
+Reservations object is a collection of reservations made by user. Reservations object support pagination with offset, limit and count.
+### Properties
 | Name | Type | Description |
 | --- | --- | --- |
 | offset | string | The unique ID of the Reservation. |
@@ -9,7 +11,8 @@
 
 
 ## Reservation
-
+Reservation object represents a reservation made by user and includes all details of the reservation.
+### Properties
 | Name | Type | Description |
 | --- | --- | --- |
 | reservation\_id | string | The unique ID of the Reservation. |
