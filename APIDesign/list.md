@@ -28,7 +28,6 @@ OAuth 2.0 bearer token with the history or reservations\_lite scope.
 Status-Code: 200 OK
 ```json
 {
-
  offset: 0,
  limit: 1,
  count: 5,
