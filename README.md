@@ -54,6 +54,7 @@ APIs will enable the same scenario as UI within the Uber app. The major use case
 |Event Organizer| Enterprise | |Details|
 
 ### API Design
+#### [Endpoints](../APIDesign/endpoints) 
 
 ### Metrics
 
