@@ -28,10 +28,10 @@ OAuth 2.0 bearer token with the history or reservations\_lite scope.
 Status-Code: 200 OK
 ```json
 {
- offset: 0,
- limit: 1,
- count: 5,
- reservation: [
+ "offset": 0,
+ "limit": 1,
+ "count": 5,
+ "reservation": [
     {
        "reservation_id":"17cb78a7-b672-4d34-a288-a6c6e44d5315",
        "pickup_time": 1429294463,
