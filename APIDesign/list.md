@@ -79,32 +79,4 @@ Status-Code: 200 OK
 | reservation[].payment\_method\_id(_optional_) | string | The unique identifier of the payment method selected by a user. If set, the trip will be requested using this payment method. If not set, the trip will be requested using the user&#39;s last used payment method. |
 | reservation[].expense\_code (_optional_) | string | An alphanumeric identifier for expense reporting policies. This value will appear in the trip receipt and any configured expense-reporting integrations like  [Uber For Business](https://www.uber.com/business) or  [Business Profiles](https://www.uber.com/business/profiles). |
 | reservation[].expense\_memo (_optional_) | string | A free text field to describe the purpose of the trip for expense reporting. This value will appear in the trip receipt and any configured expense-reporting integrations like  [Uber For Business](https://www.uber.com/business) or [Business Profiles](https://www.uber.com/business/profiles). |
-```json
-{
- offset: 0,
- limit: 1,
- count: 5,
- reservation: [
-    {
-       "reservation_id":"17cb78a7-b672-4d34-a288-a6c6e44d5315",
-       "pickup_time": 1429294463,
-       "reservation_status":"scheduled",
-       "request_time": 1429294463,
-       "product_id": "a1111c8c-c720-46c3-8534-2fcdd730040d",  
-       "start_latitude": 37.761492,
-       "start_longitude": -122.423941,
-       "start_nickname": null,
-       "start_address":null,
-       "start_place_id": null,
-       "end_latitude": 37.775393,
-       "end_longitude": -122.417546,
-       "end_nickname": null,
-       "end_address":null,
-       "end_place_id": null,
-       "payment_method_id":"a1111c8c-c720-46c3-8534-2fcdd730040d",
-       "expense_code":null,
-       "expense_memo":null
-    }
-  ]
-}
-```
+
