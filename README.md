@@ -37,6 +37,8 @@ APIs will enable the same scenario as UI within the Uber app. The major use case
 - Uber eats.
 - Better Surge handling.
 - Better exception handling.
+- Trip branding.
+- Webhook on status changed.
 
 ### Users
 
