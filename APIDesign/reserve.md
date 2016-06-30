@@ -92,7 +92,7 @@ Status-Code: 202 OK
 ### Error Responses
 
 Status-Code: 409 Conflict
-```
+```json
 {
    "error":
       {
