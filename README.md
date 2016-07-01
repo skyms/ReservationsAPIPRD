@@ -99,7 +99,7 @@ qualitative feedbacks, surveys, testing, forums, social media
 
 ### Go To Market
 
-Attract, Aware, Inspire
+Attract, Aware, Inspire, Promote, Engage and Support.
 - **Attract: Goals, values and resource** Attract developers by positioning API values directly to their needs. Understand each vertical and what developers are trying to achieve. Position our API to deliver unique values that are appealing. In addition, identify the resource available to bring this product to market, including marketing, sales, DX etc. More importantly, define the success of this product.
 - **Aware: Active developer program and experience** Drive awareness of the upcoming APIs from the beginning of the project. Build an active developer program and really engage with this community (in this case, Uber developer program). In the early design phase, socialize API design with developer community, collect their feedback and make them aware and excited about the upcoming APIs. This will also carry on to over APIs as well. This will be a huge treasure along the way and these developers will become really engaged and actually promote for us. Have monthly newsletter and open channels to communicate would also help the program active.
 - **Inspire: Strategic partnership** Inspire developers by showcasing customer evidences. Identify key strategic partners in each verticals and work closely with them to release the pilot apps using the reservations APIs. For example, Delta airlines, Open Table, Amazon Echo etc. These will be role models for the mass market and educate developers with the potentials and applications of these APIs. Eventually this will inspire developers to build even more.
