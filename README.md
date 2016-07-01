@@ -106,5 +106,5 @@ Attract, Aware, Inspire
 - **Promote** Have the big announcement and promote APIs in the right opportunity, usually a big conference/event. Then all the marketing materials should be ready and marketing campaigns should be in place to keep the momentum, including press coverage, blog post, social network coverage, partner marketing, direct mailing list.  
 - **Engage: Hackathons and conferences** Host hackathons and present at related industry or developer conferences to get developers try out the APIs and engaged. Hands on experiences can really keep them engaged and usually many exciting ideas come out of Hackathons.
 - **Support: DX, community and documentation** Update the dev portal and documentation to make sure it is really easy for developers to get started and get support whenever they need it. 
-- ** Co-marketing ** Co marketing with strategic partners is a win-win scenario for both parties.
-- ** Financial incentives ** Financial incentives could stimulate the developers as well. The Uber affiliate program is a great opportunity to motivate developers to interact with Uber and help Uber reach out to more users. 
+- **Co-marketing** Co marketing with strategic partners is a win-win scenario for both parties.
+- **Financial incentives** Financial incentives could stimulate the developers as well. The Uber affiliate program is a great opportunity to motivate developers to interact with Uber and help Uber reach out to more users. 
