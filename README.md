@@ -9,6 +9,7 @@ Tap a button, get a ride in minutes – that’s the Uber promise in more than 4
 - **Improve experience**. The seamless and worry free scheduling experience will keep users engaged with Uber.
 - **Increase revenue**. With a simple and efficient scheduling, much stronger in competition and new users brought in through 3 party app, there are will be more rides taken with Uber and more revenue. 
 - **Marketing/Branding**. With Uber logo built into more apps, Uber actually is advertising for free.
+- **Better allocate resource ** Uber can be smarter about resouce when we know the demand ahead of time.
 
 
 #### For developers/3rd party
