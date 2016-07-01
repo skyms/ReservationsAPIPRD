@@ -128,10 +128,16 @@ Attract, Aware, Inspire, Promote, Engage and Support.
 - **Promote** Have the big announcement and promote APIs in the right opportunity, usually a big conference/event. Then all the marketing materials should be ready and marketing campaigns should be in place to keep the momentum, including press coverage, blog post, social network coverage, partner marketing, direct mailing list.  
 - **Engage: Hackathons and conferences** Host hackathons and present at related industry or developer conferences to get developers try out the APIs and engaged. Hands on experiences can really keep them engaged and usually many exciting ideas come out of Hackathons.
 - **Support: DX, community and documentation** Update the dev portal and documentation to make sure it is really easy for developers to get started and get support whenever they need it. 
+- ** Measure effectiveness of marketing plan and adjust accordingly ** Different developer communities may have different preferences even in marketing program. We need to measure not only the success of product but also marketing. Invest in where it is more effective.
 - **Co-marketing** Co marketing with strategic partners is a win-win scenario for both parties.
-- **Financial incentives** Financial incentives could stimulate the developers as well. The Uber affiliate program is a great opportunity to motivate developers to interact with Uber and help Uber reach out to more users.
+- **Financial incentives** Financial incentives could stimulate the developers as well. The Uber affiliate program is a great opportunity to Mmotivate developers to interact with Uber and help Uber reach out to more users.
 
-
+##### Why my marketing program works?
+- My marketing programs have a clear message to developers. These reservations APIs are simple to use and benefits developers’ business as well as Uber.
+- My marketing plans are clear about the values these APIs added to developers' business and also showcase and inspire them how they can leverage these API and move forward in their business together with Uber.
+- My marketing plan reaches out to developers in the most natural and effective way. No matter it is an active developer program, a developer conference or hackathon. These are all the things developers are interested and familiar with. These are the channels they are more willing to communicate and accept the marketing message.
+- My marketing plan have early involvement with strategic partners. Early involvements offers the opportunity to get early feedback, have more handholding work and finally really showcase what high quality apps are like. These not only help convince mass developer community but also act as role models.
+- My marketing plans are data driven.  We should measure the effectiveness of each marketing channels and adjust accordingly. Always make sure the investment goes to the most effective channels.
 
 
 Yu Liu All Rights Reserved, 2016
