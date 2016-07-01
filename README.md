@@ -56,7 +56,9 @@ APIs will enable the same scenario as UI within the Uber app. The major use case
 
 ### API Design
 #### [Endpoints](/APIDesign/endpoints.md) 
-#### [Reserve a ride](/APIDesign/schedule.md)
+[Reservations](https://github.com/skyms/ReservationsAPIPRD/blob/master/APIDesign/endpoints.md#reservations) 
+[Reservation](https://github.com/skyms/ReservationsAPIPRD/blob/master/APIDesign/endpoints.md#reservation) 
+#### [Reserve a ride](/APIDesign/reserve.md)
 ```
 POST /reservations
 ```
