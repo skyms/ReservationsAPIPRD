@@ -78,7 +78,6 @@ DELETE /reservations/{reservation_id}
 ```
 
 ### Metrics
-
 Metrics
 
 Success Metrics
@@ -91,13 +90,9 @@ Business Success Metrics
 
 | Goals | Metrics | Goals |
 | --- | --- | --- |
-| Increase users | How many new users signed up through 3
-# rd
- party app while trying to make a reservation? | 5000 daily (assuming Uber has 100K new users daily, this account for 5%) |
+| Increase users | How many new users signed up through third party app while trying to make a reservation? | 5000 daily (assuming Uber has 100K new users daily, this account for 5%) |
 | Increase usage | How many rides are taken from reservations made by API? | 150K daily rides (roughly 15% of Uber&#39;s daily rides) |
-| Increase Revenue | What&#39;s the revenue coming from ride made through reservation by 3
-# rd
- party app | US$ 600K daily ($20/ride \* 150K ride \*20% cut)   |
+| Increase Revenue | What&#39;s the revenue coming from ride made through reservation by thrid party app | US$ 600K daily ($20/ride \* 150K ride \*20% cut)   |
 
 Service Health Metrics
 
@@ -116,26 +111,6 @@ Developer community Health Metrics
 | Total Apps interacting with reservations within 6 months | 30 |
 
 We should also consider qualitative feedback including sentiment on social network, forums  and survey results.
-User aquisition
-increase footprint
-increase stickiness
-revenue
-new line of business
-
-- Developers/app registered, number of partners, active developers, trending apps top developers
-- dev portal funnel
-- API call volumes
-- API-generated revenue
-- API-generated new users
-- API-generated rides
-
-Service uptime
-API performance
-calls per method
-errors
-percentage of error
-
-qualitative feedbacks, surveys, testing, forums, social media
 
 ### Go To Market
 
