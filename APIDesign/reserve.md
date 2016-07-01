@@ -43,9 +43,7 @@ When specifying pickup and drop-off locations, you can either use latitude/longi
 	"start_longitude": -122.423941,
 	"end_latitude": 37.775393,
 	"end_longitude": -122.417546
-
 }
-
 ```
 
 or
@@ -65,7 +63,7 @@ Status-Code: 202 OK
 {
    "reservation_id": "852b8fdd-4369-4659-9628-e122662ad257",
    "product_id": "a1111c8c-c720-46c3-8534-2fcdd730040d",
-   "status": "scheduled",
+   "reservation_status": "scheduled",
    "pickup_time": 1429294463,
    "start_latitude": 37.761492,
    "start_longitude": -122.423941,
@@ -92,15 +90,12 @@ Status-Code: 202 OK
 Status-Code: 409 Conflict
 ```json
 {
-   "error":
-      {
-         "status": 400,
-         "code": "invalid_payment",
-         "title": "The rider's payment method is invalid. The user must update the billing info."
-      }
-   
+	"error": {
+		"status": 400,
+		"code": "invalid_payment",
+		"title": "The rider's payment method is invalid. The user must update the billing info."
+	}
 }
-
 ```
 
 ### Other Possible Errors
