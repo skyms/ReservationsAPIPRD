@@ -60,21 +60,21 @@ APIs will enable the same scenario as UI within the Uber app. The major use case
 #### [Endpoints](/APIDesign/endpoints.md) 
 -[Reservations](https://github.com/skyms/ReservationsAPIPRD/blob/master/APIDesign/endpoints.md#reservations) 
 -[Reservation](https://github.com/skyms/ReservationsAPIPRD/blob/master/APIDesign/endpoints.md#reservation) 
-#### [Reserve a ride](/APIDesign/reserve.md)
+#### [Reserve a ride](/APIDesign/reserve.md) (Click the link for detailed API design)
 ```
 POST /reservations
 ```
-#### [List all reservations](/APIDesign/list.md)
+#### [List all reservations](/APIDesign/list.md) (Click the link for detailed API design)
 ```
 GET /reservations
 ```
 
-#### [Show details of a reservation](/APIDesign/details.md)
+#### [Show details of a reservation](/APIDesign/details.md)(Click the link for detailed API design)
 ```
 GET /reservations/{reservation_id}
 ```
 
-#### [Cancel a reservation](/APIDesign/cancel.md)
+#### [Cancel a reservation](/APIDesign/cancel.md)(Click the link for detailed API design)
 ```
 DELETE /reservations/{reservation_id}
 ```
