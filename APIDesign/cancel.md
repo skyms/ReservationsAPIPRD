@@ -1,6 +1,6 @@
 
 
-#### Ride Request - Cancel
+#### Reservation - Cancel
 
 Cancel a reservation on behalf of a rider.
 
