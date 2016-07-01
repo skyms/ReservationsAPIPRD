@@ -78,6 +78,44 @@ DELETE /reservations/{reservation_id}
 ```
 
 ### Metrics
+
+Metrics
+
+Success Metrics
+
+I think the success of API includes business success, service health success and developer community success.
+
+Business success should align with company goals and strategy. I believe Uber&#39;s focuses now are users, usage and monetization. Therefore, for this API, we would define the success in the same way. Since I don&#39;t have the data at hand, I will use percentage instead.
+
+Business Success Metrics
+
+| Goals | Metrics | Goals |
+| --- | --- | --- |
+| Increase users | How many new users signed up through 3
+# rd
+ party app while trying to make a reservation? | 5000 daily (assuming Uber has 100K new users daily, this account for 5%) |
+| Increase usage | How many rides are taken from reservations made by API? | 150K daily rides (roughly 15% of Uber&#39;s daily rides) |
+| Increase Revenue | What&#39;s the revenue coming from ride made through reservation by 3
+# rd
+ party app | US$ 600K daily ($20/ride \* 150K ride \*20% cut)   |
+
+Service Health Metrics
+
+| Metrics | Goals |
+| --- | --- |
+| Service uptime | 99.999% |
+| Error Rate | &lt;0.11% |
+| Average API call Performance | &lt;500ms |
+
+
+
+Developer community Health Metrics
+
+| Metrics | Goals |
+| --- | --- |
+| Total Apps interacting with reservations within 6 months | 30 |
+
+We should also consider qualitative feedback including sentiment on social network, forums  and survey results.
 User aquisition
 increase footprint
 increase stickiness
