@@ -1,8 +1,6 @@
-Schedule a ride
+### Reservations - Create
 
-### Reservations/Scheduled Rides Request - Create
-
-The _Request_ endpoint allows a ride to be scheduled on behalf of an Uber user.
+The _Reservations_ endpoint allows a ride to be scheduled on behalf of an Uber user.
 
 ### Resource
 ```
@@ -35,7 +33,7 @@ OAuth 2.0 bearer token with the request scope.
 
 ### Example
 
-When specifying pickup and dropoff locations, you can either use latitude/longitude pairs or a place ID. A place ID is just the name of an Uber saved place. Currently only &quot;home&quot; or &quot;work&quot; is acceptable.
+When specifying pickup and drop-off locations, you can either use latitude/longitude pairs or a place ID. A place ID is just the name of an Uber saved place. Currently only &quot;home&quot; or &quot;work&quot; is acceptable.
 
 ```json
 {
@@ -82,7 +80,7 @@ Status-Code: 202 OK
 | --- | --- | --- |
 | reservation\_id | string | The unique ID of the Reservation/Scheduled Ride. |
 | product\_id | string | Unique identifier representing a specific product for a given latitude &amp; longitude. For example, uberX in San Francisco will have a different product\_id than uberX in Los Angeles. |
-| status | string | The status of the reservations indicating state. |
+| reservation_status | string | The status of the reservations indicating state. Can be scheduled, cancelled or requested (already requested on behalf of user at the specified pickup time).|
 | pickup\_time | integer | Unix UTC timestamp of when the user will be picked up. Note the pickup time is 15 minutes window start from the pickup\_time specified here. |
 | pickup\_latitude | float | The latitude of the pickup. |
 | pickup\_longitude | float | The longitude of the pickup. |
@@ -105,9 +103,7 @@ Status-Code: 409 Conflict
 
 ```
 
-Possible Errors
-
-### Possible Errors
+### Other Possible Errors
 
 | Error | Code | Description |
 | --- | --- | --- |
