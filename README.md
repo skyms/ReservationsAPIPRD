@@ -57,6 +57,11 @@ APIs will enable the same scenario as UI within the Uber app. The major use case
 | Event organizers | EviteUber for Business | Event organizer can schedule a ride for participants, improving attendance. | |
 
 ### API Design
+
+#### Reservation Flow 
+![alt text](https://github.com/skyms/ReservationsAPIPRD/blob/master/images/Flow.png "Flow")
+
+
 #### [Endpoints](/APIDesign/endpoints.md) 
 -[Reservations](https://github.com/skyms/ReservationsAPIPRD/blob/master/APIDesign/endpoints.md#reservations) 
 -[Reservation](https://github.com/skyms/ReservationsAPIPRD/blob/master/APIDesign/endpoints.md#reservation) 
