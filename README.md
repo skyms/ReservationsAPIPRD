@@ -35,14 +35,13 @@ APIs will enable the same scenario as UI within the Uber app. The major use case
 
 #### Future Features
 - A widget that developers can simply add to their app to help schedule a ride with Uber.
-- Uber Pool/ Uber X combo.
-- Uber eats.
+- When users schedule a ride, Uber should be smart enough to suggest a time based on origin and destination.
+- Webhook on status changed. Uber is able to notify users when the status of a reservation change. For example, User gets notified when the reservation has been requested. 
+- Reservations for Uber Pool/ Uber X combo.
+- Reservation(Delivery window) for Uber eats and Uber Rush.
 - Better Surge handling.
-- Better exception handling.
+- Better exception handling. For example, no driver available.
 - Trip branding.
-- Webhook on status changed.
-- smart suggest pick up time based on destination.
-
 
 ### Users
 
