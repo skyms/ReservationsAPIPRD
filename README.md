@@ -99,14 +99,14 @@ qualitive feedbacks, surverys, testing, forums, socal media
 
 ### Go To Market
 
-- **Active developer program and experience** Build an active developer program and really engage with this community. From the early design phase, socialize API design with developer community, collect their feedback and make them aware and excited about the upcoming APIs. This will also carry on to over APIs as well.This will be a huge treasrue along the way and these developers will become really engaged and actually promote for us. Have monthly newsletter and open channels to communicate would be really helpful too.
-- Identify goals, resource and key roles.Position our API to deliver unique appealing values to developers.
-- Work the developer envagleist or it might be myself to identify the potential developers and work with them.
-- Identify key strategic parters in each verticals and work with them to release the pilot apps using the reservations API. For example, Delta airlines, Open Table, Amazon Echo etc.
-- Update the dev portal to get developers excited.
-- Find the right conference/event to make the big marketing annoucement and accompany the annoucmenet with massive presss coverage, including blog post, social network coverage, press coverage.
-- Host hackathons and present at related industry or developer conferences, getting developer community excited and acutally start trying our APIs.
-- 
+Attract, Aware, Inspire
+- **Attract: Goals, values and resource** Identify goals, resource and key roles. Position our API to deliver unique values that are appealing values to developers.
+- **Aware: Active developer program and experience** Build an active developer program and really engage with this community. From the early design phase, socialize API design with developer community, collect their feedback and make them aware and excited about the upcoming APIs. This will also carry on to over APIs as well.This will be a huge treasrue along the way and these developers will become really engaged and actually promote for us. Have monthly newsletter and open channels to communicate would be really helpful too.
+- **Inspire: Strategic partnership** Identify key strategic parters in each verticals and work with them to release the pilot apps using the reservations API. For example, Delta airlines, Open Table, Amazon Echo etc. These will be role models for the mass market and inspire developers with the potentials and applications of APIs.
+- **Promote**Find the right conference/event to make the big marketing annoucement and accompany the annoucmenet with massive presss coverage, including blog post, social network coverage, press coverage. 
+- **Engage: Hackathons and conferences** Host hackathons and present at related industry or developer conferences, getting developer community excited and acutally start trying our APIs.
+- **Support: DX, community and documentation**Update the dev portal and documentation Make sure it is really easy for develope
+
 
 
 
