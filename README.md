@@ -55,22 +55,22 @@ APIs will enable the same scenario as UI within the Uber app. The major use case
 |Event Organizer| Enterprise | |Details|
 
 ### API Design
-#### [Endpoints](/APIDesign/endpoints) 
-#### [Reserve a ride](/APIDesign/schedule)
+#### [Endpoints](/APIDesign/endpoints.md) 
+#### [Reserve a ride](/APIDesign/schedule.md)
 ```
 POST /reservations
 ```
-#### [List all reservations](/APIDesign/list)
+#### [List all reservations](/APIDesign/list.md)
 ```
 GET /reservations
 ```
 
-#### [Show details of a reservation](/APIDesign/details)
+#### [Show details of a reservation](/APIDesign/details.md)
 ```
 GET /reservations/{reservation_id}
 ```
 
-#### [Cancel a reservation](/APIDesign/cancel)
+#### [Cancel a reservation](/APIDesign/cancel.md)
 ```
 DELETE /reservations/{reservation_id}
 ```
@@ -98,13 +98,16 @@ percentage of error
 qualitive feedbacks, surverys, testing, forums, socal media
 
 ### Go To Market
-- Build an active developer program and really engage with this community even from the early design phase. Socialize API design, collect their feedback and make them aware of the upcoming APIs. This will be a huge treasrue along the way and they will become the big fan and huge supporters as we move forward.
+
+- **Active developer program and experience** Build an active developer program and really engage with this community. From the early design phase, socialize API design with developer community, collect their feedback and make them aware and excited about the upcoming APIs. This will also carry on to over APIs as well.This will be a huge treasrue along the way and these developers will become really engaged and actually promote for us. Have monthly newsletter and open channels to communicate would be really helpful too.
 - Identify goals, resource and key roles.Position our API to deliver unique appealing values to developers.
 - Work the developer envagleist or it might be myself to identify the potential developers and work with them.
 - Identify key strategic parters in each verticals and work with them to release the pilot apps using the reservations API. For example, Delta airlines, Open Table, Amazon Echo etc.
 - Update the dev portal to get developers excited.
 - Find the right conference/event to make the big marketing annoucement and accompany the annoucmenet with massive presss coverage, including blog post, social network coverage, press coverage.
 - Host hackathons and present at related industry or developer conferences, getting developer community excited and acutally start trying our APIs.
+- 
+
 
 
 
