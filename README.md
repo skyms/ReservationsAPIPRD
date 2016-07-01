@@ -46,15 +46,15 @@ APIs will enable the same scenario as UI within the Uber app. The major use case
 
 ### Users
 
-| Industry | Example Customer | Description |Details|
+| Vertical | Example Customer | User Cases Description | Details |
 | --- | --- | --- | --- |
-|Smart Home| Amazon Echo, Google home| Schedule a ride for the future with a simple voice command or based on conversation | Details|
-|Personal Assistant| Siri, Google | |Details|
-|Social| Messenger, iMessage | |Details|
-|Airlines| Delta | |Details|
-|Restaurants, event venues, movies| Open Table | |Details|
-|Commute| Outlook | |Details|
-|Event Organizer| Enterprise | |Details|
+| Airlines/Travel Booking | Delta Air Lines | Reserve a ride to the airport after user checks in. |   |
+| Airlines/Travel Booking | Expedia | Reserve a ride to the hotel from the airport after landing.Reserve a ride to the airport after user checks in. |   |
+| Calendar App | Outlook | Reserve a ride in the morning before the user&#39;s earliest meetingReserve a ride for me around the time users is about to leave work.Reserve a ride for me when user is heading to a meeting |   |
+| Dinning/Events/All sorts of reservations | Open Table, Trip advisor, tickets, myTime | Reserve a ride to the restaurant after a user makes his reservation. |   |
+| Smart home and assistant | Amazon Echo, Siri, Google, Cortana | Just a voice command to ask assistant to book a right in the futureAssistant can be smart about user&#39;s schedule, similar to Calendar.Integrate with other skills Assistant has including booking and reservations. |   |
+| Social networking and Messaging | Facebook, iMessage, Snapchat | Understand the conversation and suggest reserving an Uber ride in the context.  |   |
+| Event organizers | EviteUber for Business | Event organizer can schedule a ride for participants, improving attendance. | |
 
 ### API Design
 #### [Endpoints](/APIDesign/endpoints.md) 
